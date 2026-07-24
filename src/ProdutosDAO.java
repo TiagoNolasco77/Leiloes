@@ -23,8 +23,8 @@ public class ProdutosDAO {
             prep.setInt(2, produto.getValor());
             prep.setString(3, produto.getStatus());
             
-            prep.executeUpdate(); // Executa o comando no banco
-            JOptionPane.showMessageDialog(null, "Produto cadastrado com sucesso!");
+            prep.executeUpdate(); // Executa o comando no banco e informa que o produto foi cadastrado com sucesso 
+            JOptionPane.showMessageDialog(null, "Produto cadastrado com sucesso!"); 
             
         } catch (SQLException erro) {
             JOptionPane.showMessageDialog(null, "Erro ao cadastrar produto: " + erro.getMessage());
